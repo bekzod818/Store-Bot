@@ -5,12 +5,12 @@ env = Env()
 env.read_env()
 
 # .env fayl ichidan quyidagilarni o'qiymiz
-BOT_TOKEN = env.str("BOT_TOKEN")  # Bot token
+BOT_TOKEN = "1954702850:AAFsQB-FOFY0SxaAgn7eAZzmcegeHxogpNI"  # Bot token
 
-PROJECT_NAME = env.str("PROJECT_NAME") # Webhook
+PROJECT_NAME = "aiogramtelegrambot12" # Webhook
 
 WEBHOOK_HOST = f"https://{PROJECT_NAME}.herokuapp.com"
 WEBHOOK_PATH = '/webhook/' + BOT_TOKEN
 WEBHOOK_URL = f'{WEBHOOK_HOST}{WEBHOOK_PATH}'
 
-ADMINS = env.list("ADMINS")  # adminlar ro'yxati
+ADMINS = [1343692719, ]  # adminlar ro'yxati
